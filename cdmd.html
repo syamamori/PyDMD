@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>CDMD &mdash; PyDMD 0.1 documentation</title>
+  <title>CDMD &mdash; PyDMD 0.2 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PyDMD 0.1 documentation" href="index.html"/>
+    <link rel="top" title="PyDMD 0.2 documentation" href="index.html"/>
         <link rel="up" title="Code Documentation" href="code.html"/>
         <link rel="next" title="pydmd.cdmd.CDMD._compress_snapshots" href="_summaries/pydmd.cdmd.CDMD._compress_snapshots.html"/>
         <link rel="prev" title="pydmd.fbdmd.FbDMD.snapshots" href="_summaries/pydmd.fbdmd.FbDMD.snapshots.html"/> 
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.1
+                0.2
               </div>
             
           
@@ -110,6 +110,8 @@
 <li class="toctree-l3"><a class="reference internal" href="_summaries/pydmd.cdmd.CDMD.snapshots.html">pydmd.cdmd.CDMD.snapshots</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="hodmd.html">HODMD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dmdc.html">DMDc</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
@@ -266,7 +268,7 @@ the rank is the number of the biggest singular values that are needed
 to reach the &#8216;energy&#8217; specified by <cite>svd_rank</cite>; if -1, the method does
 not compute truncation.</li>
 <li><strong>tlsq_rank</strong> (<a class="reference external" href="http://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; rank truncation computing Total Least Square. Default
-is 0, that means no truncation.</li>
+is 0, that means TLSQ is not applied.</li>
 <li><strong>compression_matrix</strong> (<em>{'linear', 'sparse', 'uniform', 'sample'} or
 numpy.ndarray</em>) &#8211; the matrix that pre-multiplies the snapshots
 matrix in order to compress it; if <cite>compression_matrix</cite> is a
@@ -289,7 +291,7 @@ it by the chosen <cite>compression_matrix</cite>.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the compressed snapshots.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)">numpy.ndarray</a></td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">numpy.ndarray</a></td>
 </tr>
 </tbody>
 </table>
@@ -335,8 +337,8 @@ it by the chosen <cite>compression_matrix</cite>.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, PyDMD contributors.
-      Last updated on Jan 05, 2018.
+        &copy; Copyright 2017-2018, PyDMD contributors.
+      Last updated on Jul 09, 2018.
 
     </p>
   </div>
@@ -358,7 +360,7 @@ it by the chosen <cite>compression_matrix</cite>.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.1',
+            VERSION:'0.2',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

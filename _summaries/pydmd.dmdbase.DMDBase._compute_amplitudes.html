@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pydmd.dmdbase.DMDBase._compute_amplitudes &mdash; PyDMD 0.1 documentation</title>
+  <title>pydmd.dmdbase.DMDBase._compute_amplitudes &mdash; PyDMD 0.2 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PyDMD 0.1 documentation" href="../index.html"/>
+    <link rel="top" title="PyDMD 0.2 documentation" href="../index.html"/>
         <link rel="up" title="DMDBase" href="../dmdbase.html"/>
         <link rel="next" title="pydmd.dmdbase.DMDBase._compute_svd" href="pydmd.dmdbase.DMDBase._compute_svd.html"/>
         <link rel="prev" title="pydmd.dmdbase.DMDBase._col_major_2darray" href="pydmd.dmdbase.DMDBase._col_major_2darray.html"/> 
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.1
+                0.2
               </div>
             
           
@@ -115,6 +115,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../mrdmd.html">MrDMD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fbdmd.html">FbDMD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../cdmd.html">CDMD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hodmd.html">HODMD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dmdc.html">DMDc</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact</a></li>
@@ -202,11 +204,11 @@ bigger computational cost.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>modes</strong> (<a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)"><em>numpy.ndarray</em></a>) &#8211; 2D matrix that contains the modes, stored
+<li><strong>modes</strong> (<a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><em>numpy.ndarray</em></a>) &#8211; 2D matrix that contains the modes, stored
 by column.</li>
-<li><strong>snapshots</strong> (<a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)"><em>numpy.ndarray</em></a>) &#8211; 2D matrix that contains the original
+<li><strong>snapshots</strong> (<a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><em>numpy.ndarray</em></a>) &#8211; 2D matrix that contains the original
 snapshots, stored by column.</li>
-<li><strong>eigs</strong> (<a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)"><em>numpy.ndarray</em></a>) &#8211; array that contains the eigenvalues of the
+<li><strong>eigs</strong> (<a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><em>numpy.ndarray</em></a>) &#8211; array that contains the eigenvalues of the
 linear operator.</li>
 <li><strong>opt</strong> (<a class="reference external" href="http://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)"><em>bool</em></a>) &#8211; flag for optimized dmd.</li>
 </ul>
@@ -215,7 +217,7 @@ linear operator.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the amplitudes array</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)">numpy.ndarray</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)">numpy.ndarray</a></p>
 </td>
 </tr>
 </tbody>
@@ -246,8 +248,8 @@ linear operator.</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, PyDMD contributors.
-      Last updated on Jan 05, 2018.
+        &copy; Copyright 2017-2018, PyDMD contributors.
+      Last updated on Jul 09, 2018.
 
     </p>
   </div>
@@ -269,7 +271,7 @@ linear operator.</li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.1',
+            VERSION:'0.2',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

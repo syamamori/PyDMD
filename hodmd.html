@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>HODMD &mdash; PyDMD 1.0 documentation</title>
+  <title>HODMD &mdash; PyDMD 0.2 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PyDMD 1.0 documentation" href="index.html"/>
+    <link rel="top" title="PyDMD 0.2 documentation" href="index.html"/>
         <link rel="up" title="Code Documentation" href="code.html"/>
         <link rel="next" title="pydmd.hodmd.HODMD.atilde" href="_summaries/pydmd.hodmd.HODMD.atilde.html"/>
         <link rel="prev" title="pydmd.cdmd.CDMD.snapshots" href="_summaries/pydmd.cdmd.CDMD.snapshots.html"/> 
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                1.0
+                0.2
               </div>
             
           
@@ -110,6 +110,7 @@
 <li class="toctree-l3"><a class="reference internal" href="_summaries/pydmd.hodmd.HODMD.snapshots.html">pydmd.hodmd.HODMD.snapshots</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="dmdc.html">DMDc</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
@@ -245,7 +246,7 @@ optimal rank and uses it for truncation; if positive number, the method
 uses the argument for the truncation; if -1, the method does not
 compute truncation.</li>
 <li><strong>tlsq_rank</strong> (<a class="reference external" href="http://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; rank truncation computing Total Least Square. Default
-s 0, that means no truncation.</li>
+is 0, that means TLSQ is not applied.</li>
 <li><strong>exact</strong> (<a class="reference external" href="http://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)"><em>bool</em></a>) &#8211; flag to compute either exact DMD or projected DMD.
 Default is False.</li>
 <li><strong>opt</strong> (<a class="reference external" href="http://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)"><em>bool</em></a>) &#8211; flag to compute optimized DMD. Default is False.</li>
@@ -296,8 +297,8 @@ Default is 1.</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, PyDMD contributors.
-      Last updated on Jan 04, 2018.
+        &copy; Copyright 2017-2018, PyDMD contributors.
+      Last updated on Jul 09, 2018.
 
     </p>
   </div>
@@ -319,7 +320,7 @@ Default is 1.</li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.0',
+            VERSION:'0.2',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

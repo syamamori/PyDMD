@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pydmd.dmdbase &mdash; PyDMD 0.1 documentation</title>
+  <title>pydmd.dmdbase &mdash; PyDMD 0.2 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="PyDMD 0.1 documentation" href="../../index.html"/>
+    <link rel="top" title="PyDMD 0.2 documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                0.1
+                0.2
               </div>
             
           
@@ -342,9 +342,9 @@
 <span class="sd">        :param numpy.ndarray X: the first matrix;</span>
 <span class="sd">        :param numpy.ndarray Y: the second matrix;</span>
 <span class="sd">        :param int tlsq_rank: the rank for the truncation; If 0, the method</span>
-<span class="sd">            computes the optimal rank and uses it for truncation; if positive</span>
-<span class="sd">            number, the method uses the argument for the truncation; if -1, the</span>
-<span class="sd">            method does not compute truncation.</span>
+<span class="sd">            does not compute any noise reduction; if positive number, the</span>
+<span class="sd">            method uses the argument for the SVD truncation used in the TLSQ</span>
+<span class="sd">            method.</span>
 <span class="sd">        :return: the denoised matrix X, the denoised matrix Y</span>
 <span class="sd">        :rtype: numpy.ndarray, numpy.ndarray</span>
 
@@ -769,8 +769,8 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, PyDMD contributors.
-      Last updated on Jan 05, 2018.
+        &copy; Copyright 2017-2018, PyDMD contributors.
+      Last updated on Jul 09, 2018.
 
     </p>
   </div>
@@ -792,7 +792,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'0.1',
+            VERSION:'0.2',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

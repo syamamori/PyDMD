@@ -1,4 +1,4 @@
-HODMD 
+HODMD
 =================
 
 .. currentmodule:: pydmd.hodmd
