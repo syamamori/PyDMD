@@ -38,6 +38,9 @@ class DMD(DMDBase):
         X, Y = self._compute_tlsq(X, Y, self.tlsq_rank)
 
         U, s, V = self._compute_svd(X, self.svd_rank)
+        self._U = U
+        self._s = s
+        self._V = V
 
         self._Atilde = self._build_lowrank_op(U, s, V, Y)
 
