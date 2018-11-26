@@ -115,6 +115,9 @@ class DMDc(DMDBase):
 
         self._Atilde = U.T.conj().dot(Y - B.dot(self._controlin)).dot(V).dot(
             np.diag(np.reciprocal(s)))
+
+        self._U = U
+
         self._eigs, self._modes = self._eig_from_lowrank_op(
             self._Atilde, (Y - B.dot(self._controlin)), U, s, V, True)
         self._b = self._compute_amplitudes(self._modes, self._snapshots,
@@ -146,6 +149,9 @@ class DMDc(DMDBase):
 
         self._Atilde = Ur.T.conj().dot(Y).dot(Vp).dot(
             np.diag(np.reciprocal(sp))).dot(Up1.T.conj()).dot(Ur)
+
+        self._U = Ur
+
         self._Btilde = Ur.T.conj().dot(Y).dot(Vp).dot(
             np.diag(np.reciprocal(sp))).dot(Up2.T.conj())
         self._B = Ur.dot(self._Btilde)
